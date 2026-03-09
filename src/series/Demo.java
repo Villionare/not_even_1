@@ -6,5 +6,6 @@ public class Demo {
     String nin;
 
     static void main() {
+
     }
 }
