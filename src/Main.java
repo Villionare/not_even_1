@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         byte a = 77;
         short b = 7777;
         int c = 777777777;
@@ -11,15 +11,15 @@ public class Main {
         int num = 4;
         final String ii = "fuck";
 
-        if(num >= 4){
+        if (num >= 4) {
             System.out.println("is 4 or bigger");
             System.out.println("U+0F4F");
-        }else{
+        } else {
             System.out.println("smaller");
         }
 
-        for(int i = 0; i <= num; i++){
-            System.out.println("this is: "+ i);
+        for (int i = 0; i <= num; i++) {
+            System.out.println("this is: " + i);
         }
     }
 }
