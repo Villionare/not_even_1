@@ -1,4 +1,4 @@
-package Projects;
+package Projects.Rock_Paper_Scissiors;
 
 import javax.swing.*;
 
