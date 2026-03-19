@@ -11,5 +11,11 @@ public class AnotherSubclass extends ParentClass {
 
     void subClass2() {
         System.out.println("this is form the sub class 2");
+        fun();
     }
+
+//    @Override
+//    void fun() {
+//        System.out.println("now this is over ridden by childclass");
+//    }
 }

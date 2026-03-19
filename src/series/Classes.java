@@ -3,6 +3,7 @@ package series;
 import java.util.Arrays;
 
 public class Classes {
+
     static int gen = 5;
     String name = "bilaspur";
     int age = 999;

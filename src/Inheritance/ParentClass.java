@@ -13,4 +13,8 @@ public class ParentClass {
     void parentClass() {
         System.out.println("this is form the parent class");
     }
+
+    void fun() {
+        System.out.println("this is a method from the parent class.");
+    }
 }
