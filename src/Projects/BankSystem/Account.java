@@ -26,7 +26,7 @@ public class Account {
     public void withdraw(int amt) {
 
         if (balance <= 0 || balance < amt) {
-            System.out.println("You only have " + balance + " left.");
+            throw new InsufficientBalance("You only have " + balance + " left.");
         } else {
             balance -= amt;
         }

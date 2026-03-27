@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    
+
     static void main() {
 
         Scanner scanner = new Scanner(System.in);
@@ -145,18 +145,23 @@ public class Main {
         }
     }
 
-    static void deposit(Scanner scanner, Account user) {
+    static void deposit(Scanner scanner, Account user) throws InsufficientBalance {
         System.out.println("Enter the amount the you wanna deposit");
         double moneyAdd = scanner.nextDouble();
         user.deposit(moneyAdd);
         System.out.println("Money added to your bank");
+
     }
 
     static void withdraw(Scanner scanner, Account user) {
-        System.out.println("Enter the amount the you wanna withdraw");
-        int moneyWithdraw = scanner.nextInt();
-        user.withdraw(moneyWithdraw);
-        System.out.println("Money withdraw successful form  your bank");
+        try {
+            System.out.println("Enter the amount you want to withdraw");
+            int moneyWithdraw = scanner.nextInt();
+            user.withdraw(moneyWithdraw);
+            System.out.println("Money withdrawn successfully from your bank");
+        } catch (InsufficientBalance e) {
+            System.out.println("Error: " + e.getMessage()); // handle it, don't re-throw
+        }
     }
 
     static void checkBalance(Account user) {
