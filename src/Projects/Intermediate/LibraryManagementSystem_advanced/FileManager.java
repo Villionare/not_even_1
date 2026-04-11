@@ -70,6 +70,26 @@ public class FileManager {
         }
     }
 
+    protected static void saveTransactionHashmap(HashMap<String, Transaction> transactionHashMap) {
+        String path = "src/Projects/Intermediate/LibraryManagementSystem_advanced/storage/Transaction.dat";
+
+        File file = new File(path);
+
+        if (!file.exists()) {
+            System.out.println("Can't find the Members.dat");
+            return;
+        }
+
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(path))) {
+
+            objectOutputStream.writeObject(transactionHashMap);
+
+        } catch (IOException e) {
+            System.out.println("Exception while saving the transaction hashmap to file: " + e.getMessage());
+        }
+    }
+
+
     //LOAD
     protected static HashMap<String, Admin> loadAdminObject() {
         String FILE = "src/Projects/Intermediate/LibraryManagementSystem_advanced/storage/Admin.dat";
@@ -142,6 +162,27 @@ public class FileManager {
             System.out.println("an IO exception happened");
             System.out.println(e.getMessage());
             return new ArrayList<>();
+        }
+    }
+
+    protected static HashMap<String, Transaction> loadTransactionHashMap() {
+        String path = "src/Projects/Intermediate/LibraryManagementSystem_advanced/storage/Transaction.dat";
+
+        File file = new File(path);
+
+        if (!file.exists()) {
+            System.out.println("cant find the Members.dat");
+            return new HashMap<>();
+        }
+
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(path))) {
+
+            return (HashMap<String, Transaction>) objectInputStream.readObject();
+
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println("an IO exception happened");
+            System.out.println(e.getMessage());
+            return new HashMap<>();
         }
     }
 

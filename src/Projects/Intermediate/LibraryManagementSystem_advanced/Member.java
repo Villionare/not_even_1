@@ -2,9 +2,11 @@ package Projects.Intermediate.LibraryManagementSystem_advanced;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Member implements CSVWritable, Serializable {
 
+    private final ArrayList<Book> issueBooksList = new ArrayList<>();
     private String username;
     private String name;
     private String email;
@@ -19,6 +21,14 @@ public class Member implements CSVWritable, Serializable {
         this.password = password;
         this.issueBooks = issueBooks;
         this.username = username;
+    }
+
+    public ArrayList<Book> getIssueBooksList() {
+        return issueBooksList;
+    }
+
+    public void setIssueBooksList(Book issueBook) {
+        this.issueBooksList.add(issueBook);
     }
 
     public String getName() {

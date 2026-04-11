@@ -1,9 +1,9 @@
 package Projects.Intermediate.LibraryManagementSystem_advanced;
 
-public enum Actions {
-    ADD,
+public enum Member_Actions {
     VIEW,
     SEARCH,
-    DELETE,
+    ISSUE,
+    RETURN,
     EXIT
 }
