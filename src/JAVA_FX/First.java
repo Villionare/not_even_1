@@ -1,29 +1,4 @@
-// src/main/java/com/example/App.java
 package JAVA_FX;
-
-//state - the top level window
-//scene - the container held inside the stage
-//scene graph - the tree of all visual node inside the scene
-//scene graph is made up of different nodes (text, buttons, input, etc.)
-//nodes (container nodes) can contain children or maybe not.
-//container nodes types: Group (normal fixed size) - Region (responsive) - Control ()
-
-//creating the node - placing in the scene - putting the scene on stage
-
-//1 - create nodes = Assemble your visual elements
-//2 - Add to root node = Place elements in a container
-//3 - Create a scene = pass the root node to the scene
-//4 - Set the scene = Attach the scene to the stage
-//5 - Show the stage = call stage.show() to display
-
-//        VBox      → stack nodes vertically
-//        HBox      → stack nodes horizontally
-//        GridPane  → row/column grid
-//        BorderPane→ top/bottom/left/right/center regions
-//        StackPane → layer nodes on top of each other
-//        AnchorPane→ anchor nodes to edges (great for resizable UIs)
-//        FlowPane  → wrapping row/column layout
-//        TilePane  → equal-sized tiles
 
 import javafx.application.Application;
 import javafx.scene.Group;
