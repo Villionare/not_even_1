@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxWidth="500.0" minHeight="-Infinity" prefHeight="505.0" prefWidth="301.0" style="-fx-background-color: #2b2b2b;" styleClass="root" stylesheets="@GPT.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="579.0" prefWidth="267.0" spacing="20.0">
+            <children>
+                <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="x" textFill="WHITE" />
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in or sign up" textAlignment="CENTER" wrappingWidth="151.33335876464844">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="You’ll get smarter responses and can  upload files, images, and more." textAlignment="CENTER" wrappingWidth="230.0" />
+                    </children>
+                </VBox>
+                <VBox spacing="15.0">
+                    <children>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: #3a3a3a; -fx-background-radius: 25; -fx-padding: 12 20; -fx-border-radius: 25; -fx-text-fill: white;" text="Continue with Google" textAlignment="CENTER" textFill="#ffffff08">
+                            <padding>
+                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                            </padding>
+                        </Button>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="267.0" style="-fx-background-color: #3a3a3a; -fx-background-radius: 25; -fx-padding: 12 20; -fx-border-radius: 25;" text="Continue with Apple" textFill="#ffffff08" textOverrun="CLIP">
+                            <padding>
+                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                            </padding>
+                        </Button>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="267.0" style="-fx-background-color: #3a3a3a; -fx-background-radius: 25; -fx-padding: 12 20; -fx-border-radius: 25;" text="Continue with Phone" textFill="#ffffff08" textOverrun="CLIP">
+                            <padding>
+                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                </VBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Separator maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="100.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Or" textAlignment="CENTER">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Separator maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="100.0" />
+                    </children>
+                </HBox>
+                <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="241.0" promptText="Enter Email" styleClass=".text-field" stylesheets="@GPT.css" />
+                <Button id="continueBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" prefWidth="243.0" style="-fx-background-color: white; -fx-border-radius: 100; -fx-background-radius: 100;" stylesheets="@GPT.css" text="Continue">
+                    <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                    </padding>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </padding>
+        </VBox>
+    </children>
+</StackPane>
