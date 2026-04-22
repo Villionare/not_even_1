@@ -1,0 +1,19 @@
+#background {
+    -fx-background-color: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+    -fx-padding: 25px;
+    -fx-spacing: 10px;
+}
+
+#first_label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+#second_label {
+    -fx-text-fill: #b3b3b3;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-wrap-text: true;
+}

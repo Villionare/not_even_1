@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="300" prefWidth="400" spacing="20" style="-fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JAVA_FX.SCENE_SWITCH.SceneController">
+
+    <Label style="-fx-text-fill: white; -fx-font-size: 28px; -fx-font-weight: bold;" text="Scene 1" />
+
+    <Button fx:id="nextButtonscene2" onAction="#switch2scene2" style="-fx-font-size: 16px;" text="Go to Scene 2" />
+
+</VBox>
