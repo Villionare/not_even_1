@@ -1,0 +1,19 @@
+#mainContainerVbox {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#songImage {
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 15;
+
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 15;
+    -fx-border-width: 1.5;
+
+    -fx-padding: 5;
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.3, 0, 4);
+}
