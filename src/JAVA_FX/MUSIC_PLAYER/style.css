@@ -1,19 +1,91 @@
-#mainContainerVbox {
-    -fx-background-color: white;
-    -fx-border-color: black;
-    -fx-border-radius: 20;
-    -fx-background-radius: 20;
+.root {
+    -fx-background-color: linear-gradient(to bottom, #121212, #1e1e1e);
 }
 
-#songImage {
-    -fx-background-color: #f5f5f5;
-    -fx-background-radius: 15;
+/* MAIN CONTAINER */
+.main-container {
+    -fx-padding: 25;
+}
 
-    -fx-border-color: #dcdcdc;
-    -fx-border-radius: 15;
-    -fx-border-width: 1.5;
+/* TEXT */
+.song-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
 
-    -fx-padding: 5;
+.meta-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #b3b3b3;
+}
 
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 10, 0.3, 0, 4);
+.time-text {
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 12px;
+}
+
+/* ALBUM ART */
+.album-art {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.5, 0, 4);
+    -fx-background-radius: 12;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+/* PRIMARY (IMPORT) */
+.primary-btn {
+    -fx-background-color: #1db954;
+    -fx-text-fill: white;
+}
+
+.primary-btn:hover {
+    -fx-background-color: #1ed760;
+}
+
+/* SECONDARY */
+.secondary-btn {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.secondary-btn:hover {
+    -fx-background-color: #444;
+}
+
+/* ICON BUTTONS */
+.icon-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.icon-btn:hover {
+    -fx-text-fill: #1db954;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+    -fx-background-color: #1db954;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-background-radius: 50%;
+}
+
+.play-btn:hover {
+    -fx-background-color: #1ed760;
+}
+
+/* SLIDER */
+.slider .track {
+    -fx-background-color: #444;
+}
+
+.slider .thumb {
+    -fx-background-color: #1db954;
 }
