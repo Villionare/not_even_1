@@ -3,6 +3,14 @@ package FILM;
 public class AbstractClasses extends AbstractHuman {
 
     static void main() {
+
+
+
+        @Deprecated
+
+        @SuppressWarnings("unused")
+        int rr = 43534;
+
         AbstractClasses abstractClasses = new AbstractClasses();
 
         abstractClasses.name = "Ra.One";

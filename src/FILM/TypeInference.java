@@ -10,8 +10,13 @@ public class TypeInference {
     //var uses the declared type of the expression on the right-hand side to determine the variable's type.
     //VAR IS RESOLVED AT COMPILE TIME
 
+
     static void main() {
 
+        Object j = new Object();
+        System.out.println("class: " + j.getClass());
+        System.out.println("class: " + j.toString());
+        System.out.println("printing object: " + j);
 
         var a = 10; //we know that var will become int
 
@@ -31,4 +36,5 @@ public class TypeInference {
         else
             return new C();
     }
+
 }
